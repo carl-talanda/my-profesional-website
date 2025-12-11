@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+/* body */ /* */
+
+body {
+	background-color: #464646;
+	margin: 0;
+	padding: 0;
+}
+
+/* end */
+
+.container-main {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* container-right class */
+
+.container-right {
+	background-color: black;
+	width: 70vh;
+	height: 65.1vw;
+	margin-left: auto;
+}
+
+/* container-left class */
+
+.container-left img {
+	position: absolute;
+	left: 18%;
+	top: 20%;
+	border-radius: 14rem;
+	transform: translateX(-29rem);
+	animation: animate-image 1s forwards;
+	animation-duration: 2s;
+	animation-delay: 2.6s;
+}
+
+/* end */
+
+
+.animated-text h1 {
+	color: white;
+	font-size: 2.0rem;
+}
+
+.animated-text {
+	transform: translateX(8%);
+	position: absolute;
+	animation: animtext 2s forwards;
+}
+
+/* animations only */
+
+@keyframes animtext {
+	from {
+		transform: translateX(-41.1rem);
+	}
+	to {
+		transform: translateX(6rem);
+	}
+}
+
+@keyframes animtextsmall {
+	from {
+		transform: translateX(-27rem);
+	}
+	to {
+		transform: translateX(6%);
+	}
+}
+
+/* end */
+
+.text-on p {
+	color: white;
+	animation: animate-text 1s forwards;
+}
+
+.text-on {
+	position: absolute;
+	top: 28rem;
+	left: 4rem;
+	width: 40rem;
+	transform: translateX(-44rem);
+	animation: animate-text 2s forwards;
+	animation-delay: 1s;
+}
+
+.list1 {
+	position: absolute;
+	transform: translateX(-6%);
+}
+
+.list1 ul {
+	color: white;
+}
+
+.box12 {
+	width: 130px;
+	height: 130px;
+	background-color: black;
+	position: absolute;
+	top: 11.5rem;
+	left: 15.8rem;
+	opacity: 0;
+	width: 200px;
+	height: 230px;
+}
+
+.box12:hover ~ .tag1 {
+	animation: animateo 2s forwards;
+}
+
+/* Animtaion */
+
+@keyframes animateo {
+	from {
+		transform: translateX(0%);
+	}
+
+	to {
+		transform: translateX(82%);
+	}
+}
+
+@keyframes animate-text {
+	from {
+		transform: translateX(-44rem);
+	}
+
+	to {
+		transform: translateX(0rem);
+	}
+}
+
+@keyframes animate-image {
+	from {
+		transform: translateX(-29rem);
+	}
+
+	to {
+		transform: translateX(-0rem);
+	}
+}
+
+/* End Animation /*
