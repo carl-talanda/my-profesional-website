@@ -12,7 +12,7 @@ body {
 
 /* end */
 
-.container-main {
+.container-main { /* The main Container for .container-right and .container-left */
 	display: flex;
 	align-items: flex-start;
 }
@@ -21,130 +21,178 @@ body {
 
 .container-right {
 	background-color: black;
-	width: 70vh;
-	height: 65.1vw;
+	width: 100vh;
+	height: 49.1vw;
 	margin-left: auto;
 }
 
+/* Animation For the .Container right main */
+
+@keyframes anim-right {
+	from {
+		transform: translateY(-60rem);
+	}
+
+	to {
+		transform: translateY(-0rem);
+	}
+}
+
+/* end */
+
 /* container-left class */
 
-.container-left img {
+.container-left img { /* This is The Class Where the image of my face belong */
 	position: absolute;
 	left: 18%;
 	top: 20%;
 	border-radius: 14rem;
-	transform: translateX(-29rem);
-	animation: animate-image 1s forwards;
+	transform: translateX(-35rem);
+	animation: animate-image 2s forwards;
 	animation-duration: 2s;
 	animation-delay: 2.6s;
 }
 
+.mycare {
+	position: absolute;
+	top: 19rem;
+	transform: translateX(22rem);
+	animation: animate-care 8s forwards;
+	animation-delay: 5s;
+	opacity: 0;
+}
+
+.mycare h2 {
+	color: white;
+}
+
+.myname1 {
+	position: absolute;
+	top: 13.5rem;
+	transform: translateX(22rem);
+	animation: animate-myname 8s forwards;
+	animation-delay: 3.8s;
+	opacity: 0;
+	transition: transform 2s;
+}
+
+.myname1:hover {
+	transform: translateX(24rem);
+}
+
+.myname1 h1 {
+	color: white;
+}
+
+/* The Animations */
+
+@keyframes animate-care {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 100;
+	}
+}
+
+@keyframes animate-myname {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 100;
+	}
+}
+/* */
+
 /* end */
 
 
-.animated-text h1 {
+.animated-text h1 { /* This is The h1 inside Animated text Where we can change font color and size etc */
 	color: white;
 	font-size: 2.0rem;
 }
 
-.animated-text {
-	transform: translateX(8%);
+.animated-text { /* This is the animated Text the text above "Welcome To My Website" */
+	transform: translateX(12rem);
 	position: absolute;
-	animation: animtext 2s forwards;
+	animation: animtext 2.3s forwards;
 }
 
 /* animations only */
 
-@keyframes animtext {
+@keyframes animtext { /* This is The animation for Animated-text class */
 	from {
 		transform: translateX(-41.1rem);
 	}
 	to {
-		transform: translateX(6rem);
+		transform: translateX(12rem);
 	}
 }
 
-@keyframes animtextsmall {
-	from {
-		transform: translateX(-27rem);
-	}
-	to {
-		transform: translateX(6%);
-	}
-}
+/* End */
 
 /* end */
 
-.text-on p {
+.text-on p { /* This is the text bellow the image of my face At first Pragraph "Hello I'm Carl Jaybert Talanda" */
 	color: white;
-	animation: animate-text 1s forwards;
 }
 
-.text-on {
+.text-on { /* This is The text-on container where we can change its position and add animations */
 	position: absolute;
-	top: 28rem;
-	left: 4rem;
+	top: 28rem;                                  
+	left: 0rem;
 	width: 40rem;
 	transform: translateX(-44rem);
 	animation: animate-text 2s forwards;
-	animation-delay: 1s;
+	animation-delay: 2s;
 }
 
-.list1 {
+.list2 {
 	position: absolute;
-	transform: translateX(-6%);
+	top: 41rem;
+	left: 6.3rem;
 }
 
-.list1 ul {
+.list2 ul {
 	color: white;
 }
 
-.box12 {
-	width: 130px;
-	height: 130px;
-	background-color: black;
-	position: absolute;
-	top: 11.5rem;
-	left: 15.8rem;
-	opacity: 0;
-	width: 200px;
-	height: 230px;
-}
-
-.box12:hover ~ .tag1 {
-	animation: animateo 2s forwards;
-}
+/* End */
 
 /* Animtaion */
-
-@keyframes animateo {
-	from {
-		transform: translateX(0%);
-	}
-
-	to {
-		transform: translateX(82%);
-	}
-}
-
-@keyframes animate-text {
+@keyframes animate-text { /* The animation for text-on class */
 	from {
 		transform: translateX(-44rem);
 	}
 
 	to {
-		transform: translateX(0rem);
+		transform: translateX(8rem);
 	}
 }
 
-@keyframes animate-image {
+@keyframes animate-image { /* An animation for .container-left img */
 	from {
-		transform: translateX(-29rem);
+		transform: translateX(-35rem);
 	}
 
 	to {
-		transform: translateX(-0rem);
+		transform: translateX(-13rem);
 	}
 }
 
-/* End Animation /*
+/* End Animation */
+ 
+.image-of-code img {
+	position: absolute;
+	top: 20rem;
+	left: 70rem;
+}
+
+.image-of-code1 img {
+	position: absolute;
+	top: 20rem;
+	left: 98rem;
+}
