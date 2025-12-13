@@ -1,0 +1,17 @@
+@media(max-width:1680px) {
+	.text-container {
+		width: 80vh;
+	}
+}
+
+@media(max-width:1600px) {
+	.mycare, .myname1 {
+		margin-left: 37vh;
+	}
+}
+
+@media(max-width:1440px) {
+	.mycare, .myname1 {
+		
+	}
+}

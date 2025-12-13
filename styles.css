@@ -1,242 +1,121 @@
-
 * {
 	box-sizing: border-box;
 }
 
 body {
+	background-color: red;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
 
-.container-right { /* The container Right Where the things on right */
+.container-main { /* The Container main*/
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+ 
+.container-left { /* The Left Container Where My Image of my Face Belong */
+	width: clamp(200px, 50vw, 1000px);
+	background-color: white;
+	height: 100vh;
+	position: relative;
+}
+
+.container-right {
+	width: clamp(200px, 50vw, 1000px);
 	background-color: black;
-	float: right;
-	width: 90vh;
-	height: 49.1vw;
+	height: 100vh;
+	position: relative;
 }
 
-.image1 img { /* The image of my Ugly Face */
-	width: 330px;
-	max-height: 331px;
-	transform: translateY(-23rem);
-	margin-left: 2rem;
-	border-radius: 12rem;
-	animation: anim-image 2.5s forwards;
-	animation-delay: 18s;
+.myface-con { /* The Image Of My Face */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 19vh;
+	transform: translateX(-0%);
+/*	animation: anim-facec 1s forwards; */
+	animation-delay: 0.4s;
 }
 
-/* image1 img's animation  original Y position of image is 4rem at transform Y translate*/
+/* Animation For Myface-con */
 
-@keyframes anim-image {
-	from {
-		transform: translateY(-23rem);
-	}
-
-	to {
-		transform: translateY(4rem);
-	}
-}
-
-/* End */
-
-.article { /* The Article paragraph text bellow the Introduction */
-	transform: translateY(2rem);
-	width: 60rem;
-	margin-left: -71rem;
-	animation: article-anim 3s forwards;
-	animation-delay: 17s;
-}
-
-/* animation for article */
-
-@keyframes article-anim {
-	from {
-		margin-left: -71rem;
-		opacity: 0;
-	}
-
-	to {
-		margin-left: 2rem;
-		opacity: 100;
-	}
-}
-
-/* end */
-
-.boldtext { /* the introduction */
-	transform: translateY(1rem);
-	margin-left: -71rem;
-	animation: anim-intro 3s forwards;
-	animation-delay: 14s;
-}
-
-/* Animation for introductions */
-
-@keyframes anim-intro {
-	from {
-		margin-left: -71rem;
-		opacity: 0;
-	}
-
-	to {
-		margin-left: 2rem;
-		opacity: 100;
-	}
-}
-
-/* end */
-
-/* header */
-
-.header1 {
-	transform: translateY(-10rem);
-	margin-left: 25rem;
-	display: grid;
-	grid-gap: 4px;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.value-name, .value-email, .GITHUB-value, .talent-value {
-	margin-right: 22rem;
-}
-/* Titles */
-.name { /* Original Transform Y translate is 0rem(This element is on top so the value should be on right) */
-	transform: translateY(-14rem);
-	animation: animt-name 3s forwards;
-}
-
-/* Animation For Name */
-
-@keyframes animt-name {
+@keyframes anim-facec {
 	0% {
-		transform: translateY(-14rem);
+		transform: translateX(-100%);
 	}
 
 	100% {
-		transform: translateY(0rem);
+		transform: translateX(0%);
 	}
 }
 
-/* End */
-
-.Email { /* Original Transform X translate is 0rem */
-	transform: translateX(42rem); /* 42rem should Note in this Class Should always visibility hide */
-	animation: anim-email 2s forwards;
-	animation-delay: 4s;
+.myface img {
+	margin-left: 4rem;
+	border-radius: 100px;
+	max-height: 200px;
 }
 
-/* Animation for email */
-
-@keyframes anim-email {
-	from {
-		transform: translateX(42rem);
-	}
-
-	to {
-		transform: translateX(0rem);
-	}
+.text-container {
+	margin-left: 4rem;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
 }
 
-.GITHUB { /* Original Transform X translate is 0rem is on left*/ 
-	transform: translateX(-30rem);
-	animation: GITHUB-ANIM 3s forwards;
-	animation-delay: 6s;
+.text1, .introd {
+	position: absolute;
 }
 
-@keyframes GITHUB-ANIM {
-	from {
-		transform: translateX(-30rem);
-	}
-
-	to {
-		transform: translateX(0rem);
-	}
+.introd { /* The Introduction */
+	top: 45vh;
 }
 
-.Talent { /* Original Transform X translate is -16rem */
-	transform: translateX(44rem);
-	animation: Talent-anim 2s forwards;
-	animation-delay: 10s;
+.text1 {
+	top: 55vh;
 }
 
-@keyframes Talent-anim {
-	from {
-		transform: translateX(44rem);
-	}
-
-	to {
-		transform: translateX(0rem);
-	}
-}
-/* Value of the titles */
-
-.value-name { /* Original Transform X translate is -16rem */ 
-	transform: translateX(37rem); /* Note in this Class Should always visibility hide. is on the left */
-	animation: anim-value-name 3s forwards;
-	animation-delay: 3s;
+.myname1 { /* The I'M CARL JAYBERT TALANDA */
+	position: absolute;
+	top: 22vh;
+	margin-left: 30vh;
+	transform: translateY(-0vh);
+/*	animation: myname12 1.2s forwards; */
+	animation-delay: 0.9s;
 }
 
-/* Value Name Animation */
+/* Animation For .myname1 */
 
-@keyframes anim-value-name {
-	from {
-		transform: translateX(37rem);
+@keyframes myname12 {
+	0% {
+		transform: translateY(-29vh);
 	}
 
-	to {
-		transform: translateX(0rem);
+	100% {
+		transform: translateY(0vh);
 	}
 }
 
-/* Value Name Animation End */
-
-.value-email { /* Original Transform Y translate is -16rem */
-	transform: translateY(46rem);
-	animation: anim-email-value 2s forwards;
-	animation-delay: 5s;
+.mycare {
+	position: absolute;
+	top: 28vh;
+	margin-left: 30vh;
+	transform: translateX(0vh);
+/*	animation: mycare12 1.4s forwards; */
+	animation-delay: 1.2s;
 }
 
-@keyframes anim-email-value {
-	from {
-		transform: translateY(46rem);
+/* Animation For .mycare */
+
+@keyframes mycare12 {
+	0% {
+		transform: translateX(72vh);
 	}
 
-	to {
-		transform: translateX(0);
-	}
-}
-
-.GITHUB-value { /* Original Transform X translate is -16rem */
-	transform: translateX(37rem);
-	animation: GITHUB-ANIM-VALUE 2s forwards;
-	animation-delay: 8s;
-}
-
-@keyframes GITHUB-ANIM-VALUE {
-	from {
-		transform: translateX(37rem);
-	}
-
-	to {
-		transform: translateX(0rem);
+	100% {
+		transform: translateX(0vh);
 	}
 }
-
-.talent-value { /* Original Transform X translate is -16rem */
-	transform: translateY(43rem);
-	animation: talent-anim-value 2s forwards;
-	animation-delay: 11s;
-}
-
-@keyframes talent-anim-value {
-	from {
-		transform: translateY(43rem);
-	}
-
-	to {
-		transform: translateX(0rem);
-	}
-}
-/* end */
-
