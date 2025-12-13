@@ -1,5 +1,7 @@
 # My Profesional Website
 
+Current Version: Pre-Alpha 0.9x0000 Build
+
 # introduction 
 
 Hello I'm Carl Jaybert Talanda I'm An front end Developer i still study on the odin project while im still on foundation i still create an complex design project with scratch no css frameworks because i focused on maxinum control
@@ -30,6 +32,18 @@ Hello im glad that i improved the portfolio here the list of new features
 -added new text on container left
 -added photo on container right but photo is broken forgot to git add because its not finnished yet
 -another animations
+
+# Pre-Alpha 0.9x0000 build
+-Website Recoded and upgraded
+-Animations Now Way More Better And Fancier
+-Fixed The overflow of Container Right
+-still no responsive i be workinig on that i'm Solo developer
+
+# pre-Alpha 1.0
+-Now Website Upgraded But Animations Reduced
+-Website is now Responsive Friendlier on Most pc's Resolution
+-Now still Only 2 animations That im Working Yet
+-Website Had rebuild Because Earlier Was Not Responsive Friendly
 
 # Apology For my Grammar
 
