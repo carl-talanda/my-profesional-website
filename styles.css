@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("artwork1.jpg"); /* This is The background image Which Covered By black with transparency 70% */
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.cover-body { /* This is The element which covered the entire body's screen as black 70% transparency */
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.70);
+}
+
+.container-main { /* This is The Main Container That Control Position Of .Container-center Or all Class that nested on it */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container-center { /* */
+	width: 75vw;
+	height: 70vh;
+	background-color: #3A3A3A;
+	border-radius: 2.5rem;
+}
+
+.the-imageface {
+	margin-left: 3rem;
+	transform: translateY(40px);
+}
+
+.the-imageface img {
+	border-radius: 320px;
+	width: 300px;
+}
+
+.myname12 {
+	transform: translateY(-180px);
+	margin-left: 20vw;
+}
+
+.myname12 h1 {
+	color: white;
+}

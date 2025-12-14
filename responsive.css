@@ -1,0 +1,23 @@
+@media(max-width: 800px) {
+	.container-main {
+		justify-content: flex-start;
+	}
+
+	.container-center {
+		min-height: 100vh;
+		min-width: 100vw;
+		border-radius: 0;
+	}
+
+	.the-imageface {
+		transform: translateY(60px);
+		margin-left: 0rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.myname12 {
+		transform: translateY(70px);
+		margin-left: 15vw;
+	}
+}
